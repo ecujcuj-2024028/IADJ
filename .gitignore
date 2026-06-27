@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Local env files
+.env
+backend/.env
+frontend/.env
+*.env
+.env*.local
+
+# YouTube Music API Credentials (SENSITIVE)
+backend/headers.json
+
+# Python cache & virtualenv
+__pycache__/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Application generated files
+backend/temp_audio/*
+!backend/temp_audio/.gitkeep
+
+# Production builds
+frontend/dist/
+frontend/dist-ssr/
+
+# IDE & system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Instalar dependencias del sistema necesarias
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copiar archivo de requerimientos
+COPY requirements.txt .
+
+# Instalar dependencias de Python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar el código del servicio
+COPY . .
+
+EXPOSE 8000
+
+# Primero inicializar la base de datos y luego arrancar la API con FastAPI
+CMD ["sh", "-c", "python init_db.py && uvicorn music_service:app --host 0.0.0.0 --port 8000"]

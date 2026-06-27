@@ -1,4 +1,4 @@
-# Gemini Radio - YouTube Music DJ 🎧
+# Gemini Radio - YouTube Music DJ
 
 Este proyecto es un orquestador e interfaz interactiva para un DJ de radio impulsado por Inteligencia Artificial (Gemini a través de OpenRouter) y síntesis de voz (ElevenLabs). Te permite reproducir música de YouTube Music, interactuar con un DJ por texto o voz, gestionar listas de reproducción, cola de reproducción, historial y me gustas/no me gustas en tiempo real.
 

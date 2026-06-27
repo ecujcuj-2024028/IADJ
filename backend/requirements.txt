@@ -1,0 +1,5 @@
+fastapi>=0.100.0
+uvicorn>=0.22.0
+ytmusicapi>=1.2.1
+python-dotenv>=1.0.0
+psycopg2-binary>=2.9.6

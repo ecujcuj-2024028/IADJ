@@ -1,0 +1,8 @@
+node_modules
+__pycache__
+*.pyc
+temp_audio/*
+!temp_audio/.gitkeep
+.env
+.env.local
+.git

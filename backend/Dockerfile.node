@@ -1,0 +1,19 @@
+FROM node:20-alpine
+
+# Instalar ffmpeg por si se requiere
+RUN apk add --no-cache ffmpeg
+
+WORKDIR /app
+
+# Copiar archivos de dependencias
+COPY package*.json ./
+
+# Instalar dependencias
+RUN npm install
+
+# Copiar el código del backend
+COPY . .
+
+EXPOSE 3001
+
+CMD ["node", "server.js"]
